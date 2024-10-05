@@ -4,22 +4,27 @@ body {
   color: #625b72;
   font-family: "Ruluko";
 }
+
 .menu {
   color: #625b72;
 }
+
 .home_image {
   height: 600px;
   border-radius: 20px;
 }
+
 .navbar {
   width: 100%;
   border: none;
+  font-family: "Ruluko";
   /* background-color: #e3dfe01c; */
   background: linear-gradient(2deg, #fbfbfb1c 119%, #510f961c 100%);
   position: absolute;
   top: 0;
   left: 0;
 }
+
 .welcome-note {
   position: absolute;
   z-index: 999;
@@ -27,6 +32,7 @@ body {
   left: 0;
   /* background: linear-gradient(191deg, #e2dee71c 4%, #e6e3f0 100%); */
 }
+
 .welcome-anime {
   animation: welcome-anime 1s ease-in-out;
   animation-delay: 1s;
@@ -38,10 +44,12 @@ body {
   0% {
     transform: translateX(-1000px);
   }
+
   100% {
     transform: translateX(20px);
   }
 }
+
 .details-anime {
   animation: details-anime 2s ease-in-out;
   animation-delay: 1s;
@@ -49,110 +57,253 @@ body {
   background: linear-gradient(191deg, #e2dee71c 4%, #fdfdfd 100%);
   /* background-color: white; */
 }
+
 @keyframes details-anime {
   0% {
     transform: translateX(1000px);
   }
+
   100% {
     transform: translateX(0px);
   }
 }
 
-.card{
+.card {
   background-color: #e3dfe01c;
   border: none;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap:1rem;
+  gap: 1rem;
 }
-.card:hover{
+
+.card:hover {
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
-.card-body{
+
+.card-body {
   padding: 1rem;
   text-align: center;
 }
-.card-img{
-  height:78px;
+
+.card-img {
+  height: 78px;
 }
-.left-first{
-  animation: left-first 6s ease-in-out;
-  
+
+.left-first {
+  animation: left-first 4s ease-in-out;
   animation-delay: 1s;
 }
-@keyframes left-first{
+
+@keyframes left-first {
+  0% {
+    transform: translateX(-5000px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.top-first {
+  animation: top-first 4s ease-in-out;
+  animation-delay: 1s;
+  z-index: -1;
+}
+
+@keyframes top-first {
   0% {
     transform: translateX(-2000px);
   }
+
   100% {
     transform: translateX(0px);
   }
 }
-.top-first{
-  animation: top-first 6s ease-in-out;
+
+.right-first {
+  animation: right-first 4s ease-in-out;
   animation-delay: 1s;
-  z-index:-1;
+  z-index: -1;
 }
 
-@keyframes top-first{
+@keyframes right-first {
   0% {
     transform: translateX(-1000px);
   }
-  100% {
-    transform: translateY(0px);
-  }
-}
-.right-first{
-  animation: right-first 6s ease-in-out;
-  animation-delay: 1s;
-}
-@keyframes right-first{
-  0% {
-    transform: translateX(-500px);
-  }
+
   100% {
     transform: translateX(0px);
   }
-}
-.left-second{
-  animation: left-second 8s ease-in-out;
-  animation-delay: 1s;
-}
-@keyframes left-second{
-  0% {
-    transform: translateX(-1000px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-.top-second{
-  animation: top-second 8s ease-in-out;
-  animation-delay: 1s;
 }
 
-@keyframes top-second{
-  0% {
-    transform: translateY(1000px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-.right-second{
-  animation: right-second 8s ease-in-out;
+.left-second {
+  animation: left-second 4s ease-in-out;
   animation-delay: 1s;
+  z-index: -1;
 }
-@keyframes right-second{
+
+@keyframes left-second {
   0% {
     transform: translateX(1000px);
   }
-  100%{
+
+  100% {
     transform: translateX(0px);
   }
-  
+}
+
+.top-second {
+  animation: top-second 4s ease-in-out;
+  animation-delay: 1s;
+  z-index: -1;
+}
+
+@keyframes top-second {
+  0% {
+    transform: translateX(5000px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.right-second {
+  animation: right-second 4s ease-in-out;
+  animation-delay: 1s;
+  z-index: -1;
+}
+
+@keyframes right-second {
+  0% {
+    transform: translateX(10000px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+.services-welcome {
+  top: 24px !important;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+}
+
+.general-services-anime {
+  width: 40%;
+  background: linear-gradient(26deg, #f5f5f500 -77%, #bfb9cb 100%);
+  background-color: white;
+  opacity: 75%;
+  animation: services-anime 2s ease-in-out;
+  animation-delay: 0s;
+  color: #625b72;
+}
+@keyframes services-anime {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+.equipment-service-anime {
+  width: 50%;
+  background: linear-gradient(26deg, #f5f5f500 -77%, #bfb9cb 100%);
+  background-color: white;
+  opacity: 75%;
+  animation: equipment-anime 2s ease-in-out;
+  animation-delay: 0s;
+  color: #625b72;
+}
+
+@keyframes equipment-anime {
+  0% {
+    transform: translateX(2000px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+.diagnostics-service-anime {
+  width: 50%;
+  background: linear-gradient(26deg, #f5f5f500 -77%, #bfb9cb 100%);
+  background-color: white;
+  opacity: 75%;
+  animation: diagnostics-anime 2s ease-in-out;
+  animation-delay: 1s;
+  color: #625b72;
+}
+@keyframes diagnostics-anime {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+.pharmacy-service-anime {
+  width: 40%;
+  background: linear-gradient(26deg, #f5f5f500 -77%, #bfb9cb 100%);
+  background-color: white;
+  opacity: 75%;
+  animation: pharmacy-anime 2s ease-in-out;
+  animation-delay: 1s;
+  color: #625b72;
+}
+
+@keyframes pharmacy-anime {
+  0% {
+    transform: translateX(2000px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+.physio-services-anime {
+  width: 40%;
+  background: linear-gradient(26deg, #f5f5f500 -77%, #bfb9cb 100%);
+  background-color: white;
+  opacity: 75%;
+  animation: physio-anime 2s ease-in-out;
+  animation-delay: 2s;
+  color: #625b72;
+}
+
+@keyframes physio-anime {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.vaccine-service-anime {
+  width: 50%;
+  background: linear-gradient(26deg, #f5f5f500 -77%, #bfb9cb 100%);
+  background-color: white;
+  opacity: 75%;
+  animation: vaccine-anime 2s ease-in-out;
+  animation-delay: 2s;
+  color: #625b72;
+}
+
+@keyframes vaccine-anime {
+  0% {
+    transform: translateX(2000px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
 }
